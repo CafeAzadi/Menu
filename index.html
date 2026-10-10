@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منوی کافه آزادی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: #1a1410;
+    color: #f5ede4;
+    min-height: 100vh;
+    padding: 20px 15px 40px;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    padding: 30px 20px 25px;
+    background: linear-gradient(135deg, #3d2b1f, #2a1d14);
+    border-radius: 20px;
+    border: 1px solid #4a382a;
+    margin-bottom: 25px;
+  }
+
+  header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #d4a574;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  header .subtitle {
+    font-size: 14px;
+    color: #a88b6f;
+  }
+
+  header .address {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #4a382a;
+    font-size: 13px;
+    color: #c9b8a8;
+    line-height: 1.8;
+  }
+
+  .category {
+    background: #241a12;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 18px;
+    border: 1px solid #3d2b1f;
+  }
+
+  .category h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #d4a574;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #4a382a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5px;
+    border-bottom: 1px solid #2f2118;
+    gap: 10px;
+  }
+
+  .item:last-child { border-bottom: none; }
+
+  .item-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5ede4;
+    flex: 1;
+  }
+
+  .item-price {
+    font-size: 15px;
+    font-weight: 800;
+    color: #d4a574;
+    white-space: nowrap;
+  }
+
+  .item-price span {
+    font-size: 11px;
+    color: #a88b6f;
+    font-weight: 400;
+    margin-right: 3px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 13px;
+    color: #a88b6f;
+    line-height: 2;
+  }
+
+  footer .heart { color: #d4a574; }
+
+  @media (max-width: 400px) {
+    header h1 { font-size: 26px; }
+    .category h2 { font-size: 18px; }
+    .item-name { font-size: 15px; }
+    .item-price { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>☕ کافه آزادی</h1>
+    <div class="subtitle">طعم آرامش در دل شهر</div>
+    <div class="address">
+      الوند، خیابان آزادی، بین کوچه ۱۳ و ۱۵
+    </div>
+  </header>
+
+  <!-- قهوه گرم -->
+  <div class="category">
+    <h2>☕ قهوه گرم</h2>
+    <div class="item">
+      <span class="item-name">اسپرسو</span>
+      <span class="item-price">۸۵<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">آمریکانو</span>
+      <span class="item-price">۹۵<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">کاپوچینو</span>
+      <span class="item-price">۱۲۰<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">لاته</span>
+      <span class="item-price">۱۲۵<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">موکا</span>
+      <span class="item-price">۱۴۰<span>هزار</span></span>
+    </div>
+  </div>
+
+  <!-- نوشیدنی سرد -->
+  <div class="category">
+    <h2>🧊 نوشیدنی سرد</h2>
+    <div class="item">
+      <span class="item-name">آیس آمریکانو</span>
+      <span class="item-price">۱۱۰<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">آیس لاته</span>
+      <span class="item-price">۱۳۵<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">فراپه</span>
+      <span class="item-price">۱۶۰<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">میلک‌شیک شکلات</span>
+      <span class="item-price">۱۵۰<span>هزار</span></span>
+    </div>
+  </div>
+
+  <!-- چای و دمنوش -->
+  <div class="category">
+    <h2>🍵 چای و دمنوش</h2>
+    <div class="item">
+      <span class="item-name">چای سیاه</span>
+      <span class="item-price">۵۵<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">چای سبز</span>
+      <span class="item-price">۶۵<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">دمنوش بهارنارنج</span>
+      <span class="item-price">۷۵<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">دمنوش گل گاوزبان</span>
+      <span class="item-price">۸۰<span>هزار</span></span>
+    </div>
+  </div>
+
+  <!-- دسر -->
+  <div class="category">
+    <h2>🍰 دسر</h2>
+    <div class="item">
+      <span class="item-name">چیزکیک</span>
+      <span class="item-price">۱۸۰<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">براونی</span>
+      <span class="item-price">۱۵۰<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">کیک شکلاتی</span>
+      <span class="item-price">۱۴۰<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">کروسان</span>
+      <span class="item-price">۱۲۰<span>هزار</span></span>
+    </div>
+  </div>
+
+  <!-- صبحانه -->
+  <div class="category">
+    <h2>🍳 صبحانه</h2>
+    <div class="item">
+      <span class="item-name">املت</span>
+      <span class="item-price">۱۸۰<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">نیمرو</span>
+      <span class="item-price">۱۵۰<span>هزار</span></span>
+    </div>
+    <div class="item">
+      <span class="item-name">پنکیک با عسل</span>
+      <span class="item-price">۲۰۰<span>هزار</span></span>
+    </div>
+  </div>
+
+  <footer>
+    <div>با عشق برای شما <span class="heart">♥</span></div>
+    <div>منوی کافه آزادی</div>
+  </footer>
+
+</div>
+</body>
+</html>
